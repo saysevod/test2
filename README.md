@@ -1,11 +1,11 @@
-Author Information
+Author Information:
   Sergey Yaschenko
   
-Description
+Description:
   Test script "Some commands"
   
-Example
+Example:
   python3 ./task_any.py
 
-License
+License:
   None.
