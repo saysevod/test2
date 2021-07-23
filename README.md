@@ -2,7 +2,7 @@ Author Information:
   Sergey Yaschenko
   
 Description:
-  Test script "Some commands"
+  Test scripts "Some commands"
   
 Example:
   python3 ./task_any.py
