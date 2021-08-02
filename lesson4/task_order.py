@@ -3,11 +3,13 @@ def main():
 
     i=0
     Answer='Yes'
-    whie i < len(s)-1 :
-        if i*2 in s:
+    while i < len(s)-1 :
+        if s[i]*2 in s:
             break
+        i += 1
     else:
         Answer='No'
+    print(Answer)
 
 if __name__ == '__main__':
     main()
