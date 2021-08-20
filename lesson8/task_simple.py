@@ -18,8 +18,14 @@ def main(min, max):
             res = res if number % count != 0 else False
         return res
 
-    print(' '.join([str(x) for x in range(min, max+1) if simple(x)]))
+    def gen(min,max):
+        i = min
+        while i <= max:
+            if simple(i):
+                yield i
+            i += 1
 
+    print(' '.join(str(i) for i in gen(min, max)))
 
 if __name__ == '__main__':
     min,max = input('Input two numbers, please: ').split()
