@@ -40,8 +40,8 @@ try:
 except ValueError:
     print('Your number is not valid')
 else:
-    if M < 5:
-        print("Number must be more than 4")
+    if M <= 5:
+        print("Number must be more than 5")
     else:
         list_one = [[random.randint(MIN, MAX) for i in range(1, M + 1)] for _ in range(1, M + 1)]
         print('Before sort')
@@ -57,3 +57,4 @@ else:
 
         print("After sort")
         print_table(sort_col(list_one))
+
