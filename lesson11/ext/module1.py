@@ -15,14 +15,13 @@ def reverse_it(number: int) -> int:
     return res
 
 
-def unique() ->None:
+def unique() -> None:
     """
     Print count of unique elements of list
     :return:
     """
     list_one = input("Input list of number, please: ").split()
     print('Count of unique number is  {}'.format(len(set(list_one))))
-
 
 
 def print_table(list_one: list) -> list:

@@ -9,6 +9,7 @@ def fun1(x: int, y: int) -> int:
     """
     return x + y
 
+
 def fun2(x: int, y: int) -> int:
     """
     :param x: one variable
@@ -16,6 +17,7 @@ def fun2(x: int, y: int) -> int:
     :return: multiplications of variables
     """
     return x * y
+
 
 def fun3(x: int, y: int) -> int:
     """

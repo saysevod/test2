@@ -1,6 +1,8 @@
 """
 Module has two functions of sort
 """
+
+
 def bubble(list_one: list) -> list:
     """
     :param list_one: list of numbers
@@ -28,7 +30,7 @@ def prepare(numbers: list, low: int, high: int) -> int:
     return item + 1
 
 
-def quick_sort(numbers: list, low: int, high: int) ->None:
+def quick_sort(numbers: list, low: int, high: int) -> None:
     """
     :param numbers: list of numbers
     :param low: start index list
