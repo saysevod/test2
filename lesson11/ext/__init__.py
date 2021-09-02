@@ -1,4 +1,4 @@
 __all__ = [
-	  'module1',
-	  'module2'
-	  ]
+    'module1',
+    'module2'
+]

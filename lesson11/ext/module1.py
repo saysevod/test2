@@ -24,16 +24,16 @@ def unique() -> None:
     print('Count of unique number is  {}'.format(len(set(list_one))))
 
 
-def print_table(list_one: list) -> list:
+def print_table(lst: list) -> list:
     """
-    :param list_one: list of matrix number
+    :param lst: list of matrix number
     :return: list of sum col
     """
 
-    for row in range(0, len(list_one)):
-        print(' '.join(["{:4d}".format(x) for x in list_one[row]]))
+    for row in range(0, len(lst)):
+        print(' '.join(["{:4d}".format(x) for x in lst[row]]))
 
-    list_two = [sum([row[i] for row in list_one]) for i in range(0, len(list_one[0]))]
+    list_two = [sum([row[i] for row in lst]) for i in range(0, len(lst[0]))]
     print(' '.join(["{:4d}".format(x) for x in list_two]))
     return list_two
 
