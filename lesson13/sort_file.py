@@ -14,7 +14,7 @@ if __name__ == '__main__':
     for i in list_two:
         print("{:<20} {:.3}".format(
             ' '.join([i['family'],
-            i['name'][0]]) + '.',
+                      i['name'][0]]) + '.',
             i['mark']))
 
     print("Mid. score {:.3}".format(sum(i['mark'] for i in dicts) / len(dicts)))
@@ -23,5 +23,5 @@ if __name__ == '__main__':
         for i in dicts:
             f.write("{:<20} {:.3} \n".format(
                 ' '.join([i['family'],
-                i['name'][0]]) + '.',
+                          i['name'][0]]) + '.',
                 i['mark']))
