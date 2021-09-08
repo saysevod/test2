@@ -25,6 +25,3 @@ if __name__ == '__main__':
                 ' '.join([i['family'],
                 i['name'][0]]) + '.',
                 i['mark']))
-
-
-
