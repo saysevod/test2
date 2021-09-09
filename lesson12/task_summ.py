@@ -10,7 +10,7 @@ def fun_sum():
             x = input('Input number, please: ')
             res += int(x)
         except (ValueError, TypeError):
-            res = x if i == 1 else ''.join([str(res), x]) #remove 0 from res
+            res = x if i == 1 else ''.join([str(res), x])  # remove 0 from res
 
     print(res)
 
