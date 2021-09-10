@@ -2,40 +2,39 @@ class Count:
     """"
     Digital count
     """
-    min = 0
-    max = 100
     cur = 0
 
-    def __init__(self, min, max):
+    def __init__(self, _min=0, _max=100):
         """
-
+        Init min, max and current variable
         :param min:
         :param max:
         """
-        self.min = min
-        self.max = max
-        self.cur = min
+        self._min = _min
+        self._max = _max
+        self.cur = _min
+
     def get_cur(self):
         """
-
+        Get current count
         :return:
         """
         return self.cur
 
     def incr(self):
         """
-
+        Increment count
         :return:
         """
-
-        self.cur = self.cur + 1 if self.cur < self.max else self.cur
+        self.cur = self.cur + 1 if self.cur < self._max else self.cur
         return self.cur
 
 
 if __name__ == '__main__':
-    a = Count(100,102)
+    a = Count(100, 103)
+    a._max = 104
     print(a.incr())
     print(a.incr())
-    print(a.get_cur())
+    print("Current {}".format(a.get_cur()))
     print(a.incr())
     print(a.incr())
